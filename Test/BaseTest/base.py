@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 def init():
     email = "tsiona@gmail.com"
     password = "123456"
+    # driver = webdriver.Chrome('..\Driver\chromedriver.exe')
     driver = webdriver.Chrome('..\Driver\chromedriver.exe')
     driver.get("https://wondemagen-barbershop.herokuapp.com/")
     driver.maximize_window()
