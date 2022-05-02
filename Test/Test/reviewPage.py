@@ -1,7 +1,6 @@
-import time
-from Utiles import *
-from setUp import *
-logIn()
+from Utilts.utils import *
+from Test.BaseTest.base import *
+driver = init()
 #review page button
 review = "//*[@id='root']/div/div[1]/a[5]"
 page = WebDriverWait(driver, 10).until(
