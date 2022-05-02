@@ -14,7 +14,7 @@ def is_send_message_button_enabled(form_element):
     return button.is_enabled()
 
 
-def test_send_message_button(form_element,
+def send_message_button(form_element,
                              data_fields,
                              expected_is_enabled):
     insert_data_to_form(form_element, data_fields)
