@@ -11,7 +11,7 @@ from random import randint
 def init():
     email = "tsiona@gmail.com"
     password = "123456"
-    driver = webdriver.Chrome('../../Driver/chromedriver.exe')
+    driver = webdriver.Chrome('..\Driver\chromedriver.exe')
     driver.get("https://wondemagen-barbershop.herokuapp.com/")
     driver.maximize_window()
     #Login with email and password :
