@@ -21,3 +21,4 @@ def test_send_message_button(form_element,
     is_enabled = is_send_message_button_enabled(form_element)
 
     assert is_enabled == expected_is_enabled
+
