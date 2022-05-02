@@ -6,7 +6,7 @@ review = "//*[@id='root']/div/div[1]/a[5]"
 page = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, review))
     )
-#form_to be feild
+
 
 
 
