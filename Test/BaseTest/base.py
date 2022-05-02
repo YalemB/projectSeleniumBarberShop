@@ -5,6 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from Utilts.utils import *
+from time import *
+from random import randint
 
 def init():
     email = "tsiona@gmail.com"
