@@ -5,7 +5,7 @@ from Test.BaseTest.base import *
 
 
 def test_image1_img():
-    # this part i copy from ProductPage tests
+    # this part is copied from ProductPage, the page will not load with usual click.
     driver = init()
     path = driver.find_element(By.XPATH, "/html[1]/body[1]/div[1]/div[1]/div[1]/a[3]")
     actions = ActionChains(driver)
@@ -13,7 +13,7 @@ def test_image1_img():
     actions.click(path).perform()
     ### without sleep test fail
     sleep(2)
-    ### thie WebDriverWait fail without sleep
+    ### the WebDriverWait did not work here
     # img = WebDriverWait(driver, 15).until(
     #     EC.presence_of_element_located((By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[1]/img[1]"))
     # ).get_attribute("src")
@@ -31,7 +31,6 @@ def test_image2_img():
     actions.click(path).perform()
     ### without sleep test fail
     sleep(2)
-    driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[2]/img[1]")
     img = driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[2]/img[1]").get_attribute("src")
     assert img == "https://i.ibb.co/094VLGS/gallery-pic-2.jpg"
 
@@ -45,7 +44,6 @@ def test_image3_img():
     actions.click(path).perform()
     ### without sleep test fail
     sleep(2)
-    driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[3]/img[1]")
     img = driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[3]/img[1]").get_attribute("src")
     assert img == "https://i.ibb.co/ZmNV2xb/gallery-pic-3.jpg"
 
@@ -59,7 +57,6 @@ def test_image4_img():
     actions.click(path).perform()
     ### without sleep test fail
     sleep(2)
-    driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[4]/img[1]")
     img = driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[4]/img[1]").get_attribute("src")
     assert img == "https://i.ibb.co/cvtN2Vm/gallery-pic-4.jpg"
 
@@ -73,7 +70,6 @@ def test_image5_img():
     actions.click(path).perform()
     ### without sleep test fail
     sleep(2)
-    driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[5]/img[1]")
     img = driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[5]/img[1]").get_attribute("src")
     assert img == "https://i.ibb.co/nDGZHmX/gallery-pic-5.jpg"
 
@@ -88,7 +84,6 @@ def test_image6_img():
     actions.click(path).perform()
     ### without sleep test fail
     sleep(2)
-    driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[6]/img[1]")
     img = driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[6]/img[1]").get_attribute("src")
     assert img == "https://i.ibb.co/hLtQ9Dx/gallery-pic-6.jpg"
 
@@ -103,7 +98,6 @@ def test_image7_img():
     actions.click(path).perform()
     ### without sleep test fail
     sleep(2)
-    driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[7]/img[1]")
     img = driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[7]/img[1]").get_attribute("src")
     assert img == "https://i.ibb.co/NTcYNNR/gallery-pic-7.jpg"
 
@@ -118,6 +112,5 @@ def test_image8_img():
     actions.click(path).perform()
     ### without sleep test fail
     sleep(2)
-    driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[8]/img[1]")
     img = driver.find_element(By.XPATH,"//body/div[@id='root']/div[1]/div[3]/div[1]/div[8]/img[1]").get_attribute("src")
     assert img == "https://i.ibb.co/wBFyf2w/gallery-pic-8.jpg"

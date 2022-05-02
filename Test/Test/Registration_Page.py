@@ -150,7 +150,7 @@ def test_failed_registration_null_pass_null_confirm():
 
 
 
-# not working atm, need to locate email popup in devt
+# not working atm, need to locate email popup in devtool
 # def failed_registration_invalid_email():
 #     driver = init_registration()
 #     driver.find_element(By.XPATH,register_page).click()
