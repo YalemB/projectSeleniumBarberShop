@@ -7,4 +7,4 @@ Aoutomation team : Yalem Bakala , Tsiona almayo , Oshrat Tagadya and Eli bugala 
 Yalem Bakala : Review page ,Products page
 Tsiona almayo : Messages page , Login
 Oshrat Tagadya : Homepage , Staff page and Products page
-Eli bugala : Registration
+Eli bugala : Registration page and gallery page
